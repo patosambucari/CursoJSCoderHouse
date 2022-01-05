@@ -1,40 +1,31 @@
-//Bienvenida
-alert('Vamos a calcular tu IMC (Indice de Masa Corporal)');
+//Ingresar un numero y decir si es primo
+let numero = Number(prompt("Ingrese un numero para ver si es PRIMO o no"));
 
-//Se pide ingreso de altura
-let altura = Number(prompt('Introduce tu altura (en centimetros)'));
+//Variable booleana para ver si es primo o no
+let primo = true;
 
-//Valido altura
-while (altura < 40 || altura > 240) {
-    altura = Number(prompt('Su altura debe ser un valor entre 40 y 240 centimetros'));
+// Variable para guardar el primer divisor encontrado
+let divisor;
+
+//Comparo si es divisible, desde 2 (porque 0 no se puede, y 1 siempre es TRUE) hasta un numero anterior al ingresado
+for (i = 2; i < numero; i++){
+// Si encuentra un divisor, cambia PRIMO a FALSE y rompe el bucle
+    if (numero % i == 0){
+        primo = false;
+        //Guarda el primer divisor encontrado
+        divisor = i;
+        break;
+    }
 }
 
-//Se pide ingreso de peso
-let peso = Number(prompt('Introduce tu peso (en kilogramos)'));
+//variable para mostrar el resultado
+let resultado;
 
-//Valido peso
-while (peso < 20 || peso > 320) {
-    peso = Number(prompt('Su peso debe ser un valor entre 20 y 320 kilogramos'));
-}
-
-// Calcula IMC --> peso (kg) / altura (mts) al cuadrado
-let imc = peso/(Math.pow((altura/100), 2));
-
-//Redondeo IMC a 2 decimales
-imc = Math.round(imc*100)/100;
-
-//Controlo Resultado
-console.log(imc);
-
-//Muestro Resultados
-if (imc > 0 && imc <= 18.50){
-    alert(`Su IMC es ${imc}. Su peso es inferior al normal.`);
-} else if (imc > 18.50 && imc <= 24.90) {
-    alert(`Su IMC es ${imc}. Su peso es normal.`);
-} else if (imc > 24.90 && imc <= 29.90) {
-    alert(`Su IMC es ${imc}. Su peso es superior al normal.`);
-} else if (imc > 29.90) {
-    alert(`Su IMC es ${imc}. Tiene obesidad.`);
+if (primo) {
+    resultado = "ES PRIMO";
 } else {
-    alert('Alguno de los datos ingresados es incorrecto');
+    resultado = (`NO ES PRIMO. Es divisible, al menos, por ${divisor}`);
 }
+
+// Muestra el resultado en pop up
+alert(`"El numero ${numero} ${resultado}"`);
