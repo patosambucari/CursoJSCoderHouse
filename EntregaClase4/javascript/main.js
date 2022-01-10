@@ -10,7 +10,6 @@ let valorDni;
 let inicioCuil;
 let digitosDni = new Array(8);
 let auxDigitoVerificador;
-let primerDecimal;
 let digitoVerificador;
 
 //Funcion Ingresa y valida sexo, solo permite m o f
@@ -21,7 +20,7 @@ const validaSexo = () => {
     }
 }
 
-//Funcion asignar inicio CUIL
+//Funcion asignar inicio CUIL: 20 Hombre, 27 Mujer
 const asignaInicioCuil = () => {
     if (valorSexo == "m") {
         inicioCuil = 20
@@ -82,15 +81,28 @@ const calculaAuxDigitoVerificador = () => {
 //Calculo el auxiliar para el digito verificador
 calculaAuxDigitoVerificador();
 
-//Obtengo primer decimal del auxiliar
-primerDecimal = Math.trunc(
-                    (Math.round(
-                        (auxDigitoVerificador/11)*10)/10 - 
-                            Math.trunc(auxDigitoVerificador/11)
-                    )*10);
+//Funcion para calcular dígito Verificador, de acuerdo a la formula
+const calculaDigitoVerificador = () => {
+    if (auxDigitoVerificador % 11 == 0){
+        digitoVerificador = 0;
+    } else if (auxDigitoVerificador % 11 == 1){
+        if (valorSexo == "m") {
+            inicioCuil = 23;
+            digitoVerificador = 9;
+        } else if (valorSexo == "f") {
+            inicioCuil = 23;
+            digitoVerificador = 4;
+        } else {
+            alert("Ocurrio un error en el ingreso del sexo");
+            validaSexo();
+        }
+    } else {
+        digitoVerificador = 11 - (auxDigitoVerificador % 11);    
+    }    
+}
 
-//Obtengo digito Verificador
-digitoVerificador = 11 - primerDecimal;
+//Obtengo Digito Verificador
+calculaDigitoVerificador();
 
 //Función para mostrar el CUIL por pantalla
 const mostrarCUIL = () => {
@@ -101,6 +113,7 @@ const mostrarCUIL = () => {
 mostrarCUIL();
 
 
+/* Checkpoints de control
 console.log(inicioCuil);
 console.log(valorDni);
 console.log(valorSexo);
@@ -108,4 +121,4 @@ console.log(digitosDni);
 console.log(auxDigitoVerificador);
 console.log(auxDigitoVerificador/11);
 console.log(primerDecimal);
-console.log(digitoVerificador);
+console.log(digitoVerificador);*/
