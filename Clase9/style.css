@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200&display=swap");
+
+body {
+  background-color: rgb(117, 120, 120);
+  font-family: "Poppins", sans-serif;
+}
+
+.div-card {
+  background-color: #191919;
+  width: 20%;
+  height: auto;
+  border-radius: 30px;
+  color: #fff;
+  padding-left: 35px;
+  padding-right: 15px;
+  margin: 25px 20px;
+  display: block;
+  padding-bottom: 30px;
+}
+
+.div-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: blueviolet;
+  border: none;
+  color: #fff;
+  height: 30px;
+  width: 50%;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+  border: none;
+  color: blueviolet;
+}
+
+.input {
+  border: solid 2px blueviolet;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 30px;
+  width: 90%;
+  color: #fff;
+}
+
+.option {
+  border: solid 2px blueviolet;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 30px;
+  width: 90%;
+  color: black;
+}
+
+.input:focus {
+  outline: none;
+  border: solid 2px blueviolet;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="div-container">
+      <!-- Card 1 -->
+      <div class="div-card">
+        <p>Button</p>
+        <input class="input" id="input-botones" type="text" name="" />
+        <button id="boton-click">Boton Click</button>
+        <button id="boton-doble-click">Boton Doble Click</button>
+        <button id="boton-mouse-down">Boton mouse down</button>
+        <button id="boton-mouse-up">Boton mouse up</button>
+        <button id="boton-mouse-move">Boton mouse move</button>
+        <button id="boton-mouse-over">Boton mouse over</button>
+        <button id="boton-mouse-out">Boton mouse out</button>
+      </div>
+
+      <!-- Cards 2 -->
+      <div class="div-card" id="div-mouse-move">
+        <p>Mouse Move</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="div-card">
+        <p>
+          Elija un :
+          <select class="nieve input" name="nieve">
+            <option class="option" value="">Seleccione Uno …</option>
+            <option class="option" value=""></option>
+            <option class="option" value=""></option>
+            <option class="option" value=""></option>
+          </select>
+        </p>
+
+        <div class="resultado"></div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="div-card">
+        <p>Eventos teclado</p>
+        <input id="psicodelico" type="text" class="input" />
+        <p>Eventos teclado tecla</p>
+        <input id="tecla" type="text" class="input" />
+      </div>
+
+      <!-- Card 5 -->
+      <div class="div-card">
+        <p>Formulario</p>
+        <form action="" class="formulario" id="formulario">
+          <input
+            class="input input-formulario"
+            type="text"
+            name=""
+            id=""
+            placeholder="Nombre"
+          />
+          <input
+            class="input input-formulario"
+            type="text"
+            name=""
+            id=""
+            placeholder="Apellido"
+          />
+          <input
+            class="input input-formulario"
+            type="number"
+            name=""
+            id=""
+            placeholder="Dni"
+          />
+          <input
+            class="input input-formulario"
+            type="email"
+            name=""
+            id=""
+            placeholder="Email"
+          />
+          <button type="submit" id="boton-submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

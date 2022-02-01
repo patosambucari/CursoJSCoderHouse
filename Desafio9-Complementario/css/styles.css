@@ -1,0 +1,62 @@
+body {
+    padding: 10px;
+    background-color:azure;
+}
+
+h1 {
+    font:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:navy;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:midnightblue;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:indianred;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+#ingresoDatos > #formIngresoDatos > h3{
+    padding-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+#ingresoDatos > #formIngresoDatos > .labelsFormulario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: medium;
+    font-size: 17px;
+}
+#ingresoDatos > #formIngresoDatos > .inputsFormulario{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 1px darkslategrey;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: whitesmoke;
+}
+#ingresoDatos > #formIngresoDatos > .boton{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkslategrey;
+    border-radius: 12px;
+    font-size: 15px;
+    color: whitesmoke;
+}
+#ingresoDatos > #mensaje{
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    font-size: 15px;
+}
+#tablaAgenda {
+    padding-top:15px;
+}

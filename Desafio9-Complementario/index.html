@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Desafio Complementario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+        
+</head>
+<body>
+    <h1>Curso Javascript CoderHouse</h1>
+    <h2>Desafío Complementario - Generar HTML</h2>
+    <div id="ingresoDatos" width="auto">
+        <form id="formIngresoDatos">
+            <h3>Ingresar nuevo contacto:</h3>
+            <label for="nombre" class="labelsFormulario"> Nombre: </label>
+            <input name="nombre" type="text" required="yes" id="nombre" class="inputsFormulario">
+            <label for="telefono" class="labelsFormulario"> Tel: </label>
+            <input name="telefono" type="number" required="yes" id="telefono" class="inputsFormulario">
+            <label for="mail" class="labelsFormulario"> E-Mail: </label>
+            <input name="mail" type="email" required="yes" id="mail" class="inputsFormulario">
+            <button id="botonProcesar" type="submit" class="boton">Agregar</button>
+            <button id="botonAgenda" type="submit" class="boton">Generar Agenda</button>
+            <br/>
+        </form>
+        <h3 id="mensaje"></h3>
+    </div>
+    <div id="tablaAgenda" width="auto">
+
+    </div>
+    <div id="tarjetas" width="auto">
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src='javascript/main.js'></script>
+
+
+</html>
