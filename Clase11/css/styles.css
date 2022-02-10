@@ -1,0 +1,40 @@
+h1 {
+    font:bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:darkslateblue;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:darkslategrey;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+}
+
+body{
+    background-color:floralwhite;
+}
+
+.boton {
+    border-collapse: collapse;
+}
+
+#boton-rojo {
+    background-color: red;
+    font-weight: bold;
+}
+#boton-verde {
+    background-color: green;
+    font-weight: bold;
+}
+#boton-azul {
+    background-color: blue;
+    font-weight: bold;
+}
+#boton-reset {
+    background-color: white;
+    font-weight: bold;
+}
